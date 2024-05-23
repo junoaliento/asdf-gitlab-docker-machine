@@ -37,14 +37,14 @@ download_release() {
 
 	if [ "$platform" = 'Linux' ]; then
 		if ! { [ "$architecture" = 'aarch64' ] || [ "$architecture" = 'armhf' ] || [ "$architecture" = 'x86_64' ]; }; then
-			fail "Unsupported architecture"
+			fail "Unsupported architecture ($architecture)"
 		fi
 	elif [ "$platform" = 'OpenBSD' ] && [ "$architecture" != 'x86_64' ]; then
-		fail "Unsupported architecture"
+		fail "Unsupported architecture ($architecture)"
 	elif [ "$platform" = 'Darwin' ] && [ "$architecture" != 'x86_64' ]; then
-		fail "Unsupported architecture"
+		fail "Unsupported architecture ($architecture)"
 	else
-		fail "Unsupported platform"
+		fail "Unsupported platform ($platform)"
 	fi
 
 	mkdir -p "$ASDF_DOWNLOAD_PATH"
