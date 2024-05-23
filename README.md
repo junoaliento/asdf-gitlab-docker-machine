@@ -52,4 +52,4 @@ Contributions of any kind welcome! See the [contributing guide](contributing.md)
 
 # License
 
-See [LICENSE](LICENSE) © [Juno Aliento](https://github.com/junoaliento/)
+This software is released under the [Apache License, Version 2.0](LICENSE).
